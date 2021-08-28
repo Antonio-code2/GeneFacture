@@ -1,0 +1,102 @@
+<!-- modal -->
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><i class="bi-pencil-square"></i> Nuevo Cliente </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- formulario -->
+
+        <form action="acciones/guardar_db.php"
+          class="row g-3"
+          method="POST">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="id_clientes"
+            name="id_clientes"
+            hidden="enable"
+
+            
+           
+          />
+        </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="nombres"
+              name="nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input
+              type="text"
+              class="form-control"
+              id="apellidos"
+              placeholder="apellidos"
+              name="apellidos"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="cedula" class="form-label">cedula</label>
+            <input
+              type="number"
+              class="form-control"
+              id="cedula"
+              placeholder="cedula"
+              name="cedula"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              placeholder="name@example.com"
+              name="correo"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input
+              type="number"
+              class="form-control"
+              id="telefono"
+              placeholder="telefono"
+              name="telefono"
+            />
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Agregar</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+      </div>
+    </div>
+  </div>
+</div>

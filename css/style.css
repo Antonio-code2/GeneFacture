@@ -1,0 +1,55 @@
+/* variables css */
+
+:root {
+  --indigo: ;
+  --navy: #000080;
+  --gold: #c2a711;
+  --orangered: #ff4500;
+  --limegreen: #32cd32;
+  --hover-link: rgb(13, 196, 252);
+}
+
+.colors {
+  background: var(--navy);
+}
+
+.perfil img {
+  width: 200px;
+  border-radius: 150px;
+  margin-top: 10px;
+}
+
+.cont-title {
+  background: var(--navy);
+  border-radius: 5px;
+}
+
+/* 
+tarjetas de clientes productos facturas */
+.cont-cliente {
+  background: var(--limegreen);
+}
+
+.cont-cliente:hover {
+  background: #1b921b;
+}
+.cont-product {
+  background: var(--orangered);
+}
+.cont-product:hover {
+  background: #b83100;
+}
+
+.cont-facture {
+  background: var(--gold);
+}
+.cont-facture:hover {
+  background: #927e09;
+}
+/* navgar */
+.link:hover{
+color: var(--hover-link);
+}
+
+
+
