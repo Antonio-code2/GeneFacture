@@ -90,6 +90,7 @@ $title = "GeneFacture | clientes"
     <td>' . $cliente["telefono"]. '</td>
 
     <td><a type="button" class="btn text-dark bg-info" href="acciones/eliminar_cliente.php?id_clientes='. $cliente["id_clientes"].'"><i class="bi-trash-fill"></i></a>
+    
      <a type="button" class="btn text-dark bg-info"   href="acciones/modificar_cliente.php?id_clientes='.$cliente["id_clientes"].'"><i class="bi-pencil-square"></i></a></td>
     </tr>';
 

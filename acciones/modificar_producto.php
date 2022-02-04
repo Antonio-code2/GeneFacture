@@ -34,7 +34,7 @@ $tipo= $_GET["tipo"];
                         <div class="input-group">
                         <input type="text" name="id_producto" hidden="enable"  value="<?=$id_producto?>" id=""></td>
                         
-                            <input type="text" name="nombre" value="<?=$nombre?>" 
+                            <input type="text" name="nombre" value="<?php $nombre ?>" 
                             id=""
                             placeholder="Nombre del producto">
                             <label class="label" for="nombre"></label>

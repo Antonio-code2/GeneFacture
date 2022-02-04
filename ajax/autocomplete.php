@@ -1,5 +1,4 @@
 <?php
-if (isset($_GET['term'])){
 
 include("../config/conectar_db.php");
 $return_arr = array();
@@ -7,16 +6,16 @@ $return_arr = array();
 if ($conexion_db)
 {
 	
-	$fetch = mysqli_query($conexion_db,"SELECT * FROM clientes where nombre like '%" . mysqli_real_escape_string($conexion_db,($_GET['term'])) . "%' LIMIT 0 ,50"); 
+	$fetch = mysqli_query($conexion_db,"SELECT * FROM clientes where nombre like '%" . mysqli_real_escape_string($conexion_db, $fetch) . "%' LIMIT 0 ,50"); 
 	
 	/* Retrieve and store in array the results of the query.*/
 	while ($row = mysqli_fetch_array($fetch)) {
 		$id_clientes=$row['id_clientes'];
 		$row_array['value'] = $row['nombre']."|".$row['nombre'];
-		$row_array['apellidos']=$row['apellidos'];
-		$row_array['cedula']=$row['cedula'];
-		$row_array['correo']=$row['correo'];
-		$row_array['telefono']=$row['telefono'];
+		$row_array['value']=$row['apellido'];
+		$row_array['value']=$row['cedula'];
+		$row_array['value']=$row['correo'];
+		$row_array['value']=$row['telefono'];
 		
 		array_push($return_arr,$row_array);
     }
@@ -29,7 +28,6 @@ mysqli_close($conexion_db);
 /* Toss back results as json encoded array. */
 echo json_encode($return_arr);
 
-}
 ?>
 
 

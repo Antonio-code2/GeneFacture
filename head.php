@@ -110,32 +110,4 @@ window.onload=show5
 
 
 
-
-<!-- script de ajax -->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script type="text/javascript">
-
-
-
-
-    <script type="text/javascript">
-$(function() {
-            $("#nombre").autocomplete({
-                source: "ajax//autocomplete.php",
-                minLength: 2,
-                select: function(event, ui) {
-					event.preventDefault();
-					$('#nombre').val(ui.item.nombre);
-					$('#apellidos').val(ui.item.apellidos);
-          $('#cedula').val(ui.item.cedula);
-          $('#correo').val(ui.item.correo);
-          $('#telefono').val(ui.item.telefono)
-					$('#id_clientes').val(ui.item.id_clientes);
-			     }
-            });
-		});
-</script>
-
 </head>

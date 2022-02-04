@@ -25,7 +25,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php echo $active_facturas; ?>" href="facturas.php">
+                <a class="nav-link <?php echo $active_facturas; ?>" href="nueva_factura.php">
                   <h3 class="link">
                     <i class="bi bi-file-earmark-ruled-fill"></i> Facturas
                   </h3>
